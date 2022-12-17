@@ -17,8 +17,8 @@ public class TrianguloController {
 		}
 
 		// Ifs para comprobar que cumpla la condicion de triangulo
-<span class="fc bfc" id="L20" title="All 2 branches covered.">		if ((t.getAngulo1() + t.getAngulo2() + t.getAngulo3()) &gt; 180) {</span>
-<span class="fc" id="L21">			throw new AngulosValidosException(&quot;Angulos no validos&quot;);</span>
+<span class="pc bpc" id="L20" title="1 of 2 branches missed.">		if ((t.getAngulo1() + t.getAngulo2() + t.getAngulo3()) &gt; 180) {</span>
+<span class="nc" id="L21">			throw new AngulosValidosException(&quot;Angulos no validos&quot;);</span>
 		}
 
 		// Ifs para comprobar que tipo es segun los lados
@@ -26,7 +26,7 @@ public class TrianguloController {
 <span class="fc" id="L26">			result += &quot;Equilatero &quot;;</span>
 <span class="fc bfc" id="L27" title="All 6 branches covered.">		} else if (t.getLado1() != t.getLado2() &amp;&amp; t.getLado1() != t.getLado3() &amp;&amp; t.getLado2() != t.getLado3()) {</span>
 <span class="fc" id="L28">			result += &quot;Escaleno &quot;;</span>
-<span class="fc" id="L29">		} else {</span>
+		} else {
 <span class="fc" id="L30">			result += &quot;Isosceles &quot;;</span>
 		}
 		// Ifs para comprobar que tipo es segun los angulos
@@ -34,7 +34,7 @@ public class TrianguloController {
 <span class="fc" id="L34">			result += &quot;Rectangulo&quot;;</span>
 <span class="fc bfc" id="L35" title="All 6 branches covered.">		} else if (t.getAngulo1() &lt; 90 &amp;&amp; t.getAngulo2() &lt; 90 &amp;&amp; t.getAngulo3() &lt; 90) {</span>
 <span class="fc" id="L36">			result += &quot;Acutangulo&quot;;</span>
-<span class="fc" id="L37">		} else {</span>
+		} else {
 <span class="fc" id="L38">			result += &quot;Obstusangulo&quot;;</span>
 		}
 <span class="fc" id="L40">		return result;</span>
