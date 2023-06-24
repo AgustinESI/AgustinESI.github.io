@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"ISOFT2_2022_ET.ISOFT2_2022_ET"}]

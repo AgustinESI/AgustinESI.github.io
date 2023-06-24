@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"ISOFT2_2022_ET.ISOFT2_2022_ET"},{"l":"ISOFT2_2022_ET.ISOFT2_2022_ET.exceptions"},{"l":"ISOFT2_2022_ET.ISOFT2_2022_ET.model"}]
