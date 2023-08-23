@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display?=swap');
 
 /*
 rosa primario #ef2881
@@ -7,13 +8,131 @@ azul oscuro primario #2e3156
 azul oscuro secundario #414477
 */
 
+
+/* Preloader */
+
+.transition {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+ 
+.start {
+    opacity: 0 !important;
+}
+  
+.loading-animation_container {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.096);
+}
+.loading-animation {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: inline-block;
+}
+.loading-animation:after {
+	content: " ";
+	display: block;
+	width: 300px;
+	height: 300px;
+	margin: 1px;
+	border-radius: 50%;
+	border: 10px solid #fff;
+	border-color: #ef2881 transparent #2e3156 transparent;
+	-webkit-animation: dual-ring_animation 1.2s linear infinite;
+	animation: dual-ring_animation 1.2s linear infinite;
+}
+
+@-webkit-keyframes dual-ring_animation {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes dual-ring_animation {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+
+.badge-language{
+    height: auto;
+    border-radius: 0.5vw;
+    padding: 5px;
+}
+
+.animated-title {
+    position: relative;
+    font-size: 2vw;
+    -webkit-text-stroke: 0.1vw #2e3156;
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.animated-title::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #ef2881;
+    -webkit-text-stroke: 0vw #2e3156;
+    border-right: 3px solid #2e3156;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%, 20%, 40%, 100%
+    {
+        width: 0%;
+    }
+    40%, 60%, 80%
+    {
+        width: 100%;
+    }
+}
+
+.nav-item-dev{
+    font-weight: normal !important;
+}
+
+
+.subtitle{
+    font-size: 1vw;
+}
+
 .nav-logo {
     width: 20%;
     height: auto;
 }
 
 .experience-company-logo {
-    width: 70%;
+    width: 55%;
+    height: auto;
+}
+
+.projects-logo {
+    width: 100%;
     height: auto;
 }
 
