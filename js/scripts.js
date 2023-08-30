@@ -7,24 +7,32 @@
 // Use this file to add JavaScript to your project
 
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     var status = document.getElementById('status');
     var preloader = document.getElementById('preloader');
     var footer = document.getElementsByTagName('footer')[0];
     var main = document.getElementsByTagName('main')[0];
     var body = document.body;
 
-    setTimeout(function() {
+    setTimeout(function () {
         status.remove();
         preloader.remove();
         body.style.overflow = 'visible';
         main.classList.remove('start');
         footer.classList.remove('start');
-        
+
         // Add the transition class again after a short delay to trigger the animation
-        setTimeout(function() {
+        setTimeout(function () {
             main.classList.add('transition');
             footer.classList.add('transition');
         }, 100);
     }, 350);
+
+    /* Demo purposes only */
+    $(".hover").mouseleave(
+        function () {
+            $(this).removeClass("hover");
+        }
+    );
+
 });

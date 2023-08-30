@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="css/fonts.googleapis.css" rel="stylesheet" />
         <!-- Bootstrap icons-->
-        <link href="css/fonts.googleapis.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/personal_style.css" rel="stylesheet" />
@@ -38,84 +38,47 @@
                     </div>
                 </div>
             </nav>
-            
-            <!-- Page content-->
-            <section class="py-5">
-                <div class="container px-5">
-                    <!-- Contact form-->
-                    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
-                        <div class="text-center mb-5">
-                            <h1 class="fw-bolder">Get in touch</h1>
-                            <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
-                        </div>
-                        <div class="row gx-5 justify-content-center text-center">
 
-                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <input type="text" id="name" name="name" class="form-control">
-                                            <label for="name" class="">Your name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <input type="text" id="email" name="email" class="form-control">
-                                            <label for="email" class="">Your email</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="md-form mb-0">
-                                            <input type="text" id="subject" name="subject" class="form-control">
-                                            <label for="subject" class="">Subject</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="md-form">
-                                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                            <label for="message">Your message</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center text-md-left">
-                                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                                </div>
-                            </form>
-                            
-                            <div class="row gx-5 justify-content-center text-center">
-                                <div class="col-lg-12 col-xl-4">
-                                    <div class="circle-container mb-4">
-                                        <div class="circle bg-primary  ">
-                                            <i class="bi bi-envelope-fill"></i>
-                                        </div>
-                                    </div>
-                                    <h4 class="fw-bolder">Email</h4>
-                                    <p>agustinsanchezmartin1@gmail.com</p>
-                                </div>
-                                <div class="col-lg-12 col-xl-4">
-                                    <div class="circle-container mb-4">
-                                        <div class="circle bg-primary  ">
-                                            <i class="bi bi-github"></i>
-                                        </div>
-                                    </div>
-                                    <h4 class="fw-bolder">GitHub</h4>
-                                    <p>AgustinESI</p>
-                                </div>
-                            </div>
-                        </div>
+            <div class="container px-5 mb-5 mt-5">
+                <form class="form">
+                    <h3 class="display-5 fw-bolder"><span class="text-gradient d-inline">Get in touch</span></h3>
+                    <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
+                    <p type="Name:"><input></input></p>
+                    <p type="Email:"><input></input></p>
+                    <p type="Message:"><input></input></p>            
+                    <div class="contact-container">
+                        <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                        <span class="email-text">agustinsanchezmartin1@gmail.com</span>
+                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
                     </div>
-                </div>
-            </section>
+                </form>
+            </div>
+           
         </main>
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto start transition">
             <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Agustín Sánchez Martín 2023</div></div>
+                <div class="row align-items-center justify-content-center flex-column flex-sm-row">
+                    <div class="col-auto social-media">
+                        <figure class="snip1566"><img src="assets/images/telegram.png"/>
+                            <figcaption><i class="ion-android-open"></i></figcaption>
+                            <a href="https://t.me/+34606238086"></a>
+                        </figure>
+                        <figure class="snip1566">
+                            <img src="assets/images/gmail-removebg-preview.png"/>
+                            <figcaption><i class="ion-android-add"></i></figcaption>
+                            <a href="mailto: agustinsanchezmartin1@gmail.com"></a>
+                        </figure>
+                        <figure class="snip1566"><img src="assets/images/github.png"/>
+                            <figcaption><i class="ion-android-star-outline"></i></figcaption>
+                            <a href="https://github.com/AgustinESI"></a>
+                        </figure>
+                        <figure class="snip1566"><img src="assets/images/linkedin.png"/>
+                            <figcaption><i class="ion-android-stopwatch"></i></figcaption>
+                            <a href="https://linkedin.com/in/agustin-sanchez-martin"></a>
+                        </figure>
+                    </div>
+                    <div class="small m-0 social-media">Copyright &copy; Agustín Sánchez Martín 2023. All Right Reserved</div>
                 </div>
             </div>
         </footer>
