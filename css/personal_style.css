@@ -8,6 +8,89 @@ azul oscuro primario #2e3156
 azul oscuro secundario #414477
 */
 
+
+.project-card-image img{
+    width: 100%;
+}
+
+.project-card {
+  background: white;
+  width: 380px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 14px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.project-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.project-card-image {  
+  img {
+    width: 400px;
+    position: absolute;    
+    top: -65px;
+    left: -70px;
+  }
+}
+
+.project-card__unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.project-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;  
+}
+
+.project-card__level{
+    color: #ef2881;
+    margin-top: 80px !important;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+
+.carousel-caption h3 {
+    color:  #414477;
+}
+
+.carousel-caption ul li,
+.carousel-caption p {
+    color: black;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #ef2881;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #ef2881;
+}
+
 .arrow-guide {
     width: 100%;
     height: 100%;

@@ -27,12 +27,4 @@ window.addEventListener('load', function () {
             footer.classList.add('transition');
         }, 100);
     }, 350);
-
-    /* Demo purposes only */
-    $(".hover").mouseleave(
-        function () {
-            $(this).removeClass("hover");
-        }
-    );
-
 });
