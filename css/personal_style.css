@@ -8,6 +8,13 @@ azul oscuro primario #2e3156
 azul oscuro secundario #414477
 */
 
+.blockquote-description{
+    margin-left: 20px;
+}
+
+.blockquote-divider{
+    font-size: 1.5em;
+}
 
 .project-card {
   background: white;
