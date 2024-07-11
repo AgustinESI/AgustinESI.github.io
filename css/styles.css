@@ -11594,7 +11594,7 @@ html {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 15vw;
+  border-radius: 3vw;
 }
 .profile .dots-1 {
   position: absolute;
@@ -11732,4 +11732,9 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+
+.ta-justify{
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
