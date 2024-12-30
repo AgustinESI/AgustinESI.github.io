@@ -20,12 +20,11 @@ window.addEventListener("load", function () {
     main.classList.remove("start");
     footer.classList.remove("start");
 
-    // Add the transition class again after a short delay to trigger the animation
     setTimeout(function () {
       main.classList.add("transition");
       footer.classList.add("transition");
     }, 100);
-  }, 350);
+  }, 150);
 
   const baseYear = 2017;
   const yearDifference = new Date().getFullYear() - baseYear;
