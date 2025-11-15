@@ -31,4 +31,7 @@ window.addEventListener("load", function () {
   document.getElementById(
     "experience"
   ).textContent = `${yearDifference} years of experience`;
+
+  const currentYear = new Date().getFullYear();
+  document.getElementById("currentYear").textContent = currentYear;
 });
